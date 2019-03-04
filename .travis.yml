@@ -23,3 +23,7 @@ script:
   - >
     echo "Running unit tests";
     Build/Scripts/runTests.sh -s unit -p $TRAVIS_PHP_VERSION
+
+  - >
+    echo "Running functional tests";
+    Build/Scripts/runTests.sh -s functional -p $TRAVIS_PHP_VERSION

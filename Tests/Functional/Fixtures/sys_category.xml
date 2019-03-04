@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+    <sys_category>
+        <uid>1</uid>
+        <pid>1</pid>
+        <title>Cat top</title>
+        <parent>0</parent>
+    </sys_category>
+    <sys_category>
+        <uid>2</uid>
+        <pid>1</pid>
+        <title>cat sub 1</title>
+        <parent>1</parent>
+    </sys_category>
+    <sys_category>
+        <uid>3</uid>
+        <pid>1</pid>
+        <title>cat sub 2</title>
+        <parent>1</parent>
+    </sys_category>
+</dataset>
