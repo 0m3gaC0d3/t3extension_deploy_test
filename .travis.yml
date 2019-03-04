@@ -1,0 +1,25 @@
+language: php
+
+php:
+  - 7.0
+
+sudo: true
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+notifications:
+  email:
+    recipients:
+      - wpu@hotmail.de
+    on_success: change
+    on_failure: change
+
+before_script:
+  - Build/Scripts/runTests.sh -s composerInstall -p $TRAVIS_PHP_VERSION
+
+script:
+  - >
+    echo "Running unit tests";
+    Build/Scripts/runTests.sh -s unit -p $TRAVIS_PHP_VERSION

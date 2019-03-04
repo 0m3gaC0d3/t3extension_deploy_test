@@ -1,0 +1,6 @@
+.idea/
+composer.lock
+.Build
+Build/testing-docker/.env
+Build/testing-docker/.database
+.php_cs.cache
